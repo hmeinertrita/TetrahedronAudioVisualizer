@@ -1,0 +1,56 @@
+/*
+Error: File to import not found or unreadable: compass/reset.
+        on line 6 of sass/screen.scss
+
+1: /* Welcome to Compass.
+2:  * In this file you should write your main styles. (or centralize your imports)
+3:  * Import this file using the following HTML or equivalent:
+4:  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> *\/
+5: 
+6: @import "compass/reset";
+7: 
+8: .canvas {
+9:   align-items: center;
+10:   justify-content: center;
+11:   position: relative;
+
+Backtrace:
+sass/screen.scss:6
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:44:in `import'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:384:in `_render_with_sourcemap'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:301:in `render_with_sourcemap'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:391:in `run'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/exec/base.rb:52:in `parse'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/exec/base.rb:19:in `parse!'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.4.25/bin/sass:13:in `<top (required)>'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/bin/sass:23:in `load'
+/Users/harrisonmeinertrita/.rbenv/versions/2.5.1/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: compass/reset.\A         on line 6 of sass/screen.scss\A \A 1: /* Welcome to Compass.\A 2:  * In this file you should write your main styles. (or centralize your imports)\A 3:  * Import this file using the following HTML or equivalent:\A 4:  * <link href=\"/stylesheets/screen.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" /> */\A 5: \A 6: @import \"compass/reset\";\A 7: \A 8: .canvas {\A 9:   align-items: center;\A 10:   justify-content: center;\A 11:   position: relative;"; }

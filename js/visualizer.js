@@ -13,7 +13,7 @@ const faceCircumRadius = Math.sqrt(Math.pow(faceInRadius,2) + Math.pow(edgeCircu
 function setEdgeLength(addedLength, vertex) {
   const height = faceCircumRadius + faceInRadius + addedLength;
   const length = Math.sqrt(Math.pow(edgeCircumRadius,2) + Math.pow(height,2));
-  
+
   $('.vertex__'+vertex+':not(.base) .edge').css('--length',length+'px');
 }
 

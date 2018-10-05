@@ -1,5 +1,3 @@
-import updateVertext from './visualizer.js';
-
 var audioElement;
 var contextClass = (window.AudioContext || window.webkitAudioContext);
 var audioContext = new contextClass();
@@ -11,9 +9,9 @@ var frequencyData = new Uint8Array(1024);
 //GET FILE
 $(document).ready(() => {
   var input = $('#input');
-  input.on('change', e => {
+  input.on('change', function() {
     audioElement = new Audio();
-    audioElement.src = URL.createObjectURL(this.files[0]);
+    audioElement.src = URL.createObjectURL($(this).get(0).files[0]);
     source = audioContext.createMediaElementSource(audioElement);
   });
 });

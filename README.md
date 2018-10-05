@@ -6,4 +6,5 @@ An audio visualizer that uses the Web Audio API to create a visualizer from a 3D
 The distance of each of the vertices from the centroid changes dynamically based on the audio.
 
 Resources:
-[Make Your Browser Dance by Ruth John](https://24ways.org/2013/make-your-browser-dance/)
+
+* [Make Your Browser Dance by Ruth John](https://24ways.org/2013/make-your-browser-dance/)

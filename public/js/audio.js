@@ -1,4 +1,4 @@
-const visualizer = require('./visualizer.js');
+import updateVertext from './visualizer.js';
 
 var audioElement;
 var contextClass = (window.AudioContext || window.webkitAudioContext);
@@ -46,6 +46,6 @@ function update() {
   analyser.getByteFrequencyData(frequencyData);
   for (var i = 0; i < 4; i++) {
     const key = i*128;
-    visualizer.updateVertex(frequencyData[key]/4, i);
+    updateVertex(frequencyData[key]/4, i);
   }
 }

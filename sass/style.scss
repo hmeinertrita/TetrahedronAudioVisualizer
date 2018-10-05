@@ -14,31 +14,30 @@
   height: 100vh;
 }
 
+//Geometry
 $edge-count: 3;
 $edge-length: 100px;
-$edge-colour: pink;
-
 $bond-angle: acos(-1/3)*1rad;
-
 $edge-base-angle: 360deg/$edge-count;
 $edge-c-radius: .5*$edge-length/sin(.5*$edge-base-angle);
 $edge-i-radius: .5*$edge-length/tan(.5*$edge-base-angle);
-
 $edge-angle: asin($edge-c-radius/$edge-length);
-
 $cube-edge-length: $edge-length/sqrt(2);
-
 $face-count: 4;
 $face-height: $edge-i-radius + $edge-c-radius;
 $face-i-radius: $edge-c-radius*tan(asin($edge-i-radius/$face-height)*180deg/pi());
 $face-c-radius: sqrt(pow($face-i-radius,2) + pow($edge-c-radius, 2));
+
+//Colours
+$base-colour: blue;
+$visualizer-colour: cyan;
 
 .polyhedron {
   position: absolute;
   top: 50%;
   left: 50%;
   transform-style: preserve-3d;
-  animation: rotate 50s linear infinite;
+  animation: spin 15s ease-in-out infinite;
   @keyframes spin {
     0% {
       transform: rotateX(90deg) rotateY(360deg) rotateZ(0deg);
@@ -81,14 +80,14 @@ $face-c-radius: sqrt(pow($face-i-radius,2) + pow($edge-c-radius, 2));
   box-sizing: content-box;
   transform-style: preserve-3d;
   position: absolute;
-  border: 1px solid cyan;
-  --length: #{$edge-length};
+  border: 1px solid $visualizer-colour;
+  --length: $edge-length;
   width: var(--length);
   transform-origin: top left;
-  --angle: #{0.5 * pi() + $edge-angle * 1rad};
+  --angle: ((0.5 * pi()) + ($edge-angle * 1rad));
 
   &.base {
-    border: 1px solid blue;
+    border: 1px solid $base-colour;
   }
 
   @for $i from 0 through 2 {
@@ -102,7 +101,7 @@ $face-c-radius: sqrt(pow($face-i-radius,2) + pow($edge-c-radius, 2));
   position: absolute;
   transform-style: preserve-3d;
   transform-origin: top left;
-  --translate: #{$face-c-radius};
+  --translate: $face-c-radius;
 
   &__0 {
     transform: rotateZ(-60deg) translateZ(var(--translate));
